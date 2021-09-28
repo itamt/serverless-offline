@@ -88,7 +88,9 @@ export default class PythonRunner {
       console.log(
         `json = ${json}, typeof json = ${typeof json}, payload = ${payload}`,
       )
-      payload = `json = ${json}, typeof json = ${typeof json}, payload = ${payload}`
+      payload = `json = ${JSON.stringify(
+        json,
+      )}, typeof json = ${typeof json}, payload = ${JSON.stringify(payload)}`
     }
 
     // return 'xxx'
