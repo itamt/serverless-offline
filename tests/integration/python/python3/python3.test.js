@@ -27,22 +27,21 @@ _describe('Python 3 tests', () => {
   ;[
     {
       description: 'should work with python 3',
-      // expected: {
-      //   message: 'Hello Python 3!',
-      // },
-      expected: null,
+      expected: {
+        message: 'Hello Python 3!',
+      },
       path: '/dev/hello',
     },
-    // {
-    //   description: 'should work with null response',
-    //   expected: null,
-    //   path: '/dev/null',
-    // },
-    // {
-    //   description: 'should work with empty string response',
-    //   expected: '',
-    //   path: '/dev/empty',
-    // },
+    {
+      description: 'should work with null response',
+      expected: null,
+      path: '/dev/nullresp',
+    },
+    {
+      description: 'should work with empty string response',
+      expected: '',
+      path: '/dev/emptyresp',
+    },
   ].forEach(({ description, expected, path }) => {
     test(description, async () => {
       const url = joinUrl(TEST_BASE_URL, path)
