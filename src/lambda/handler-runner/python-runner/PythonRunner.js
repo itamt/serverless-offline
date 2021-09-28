@@ -84,6 +84,10 @@ export default class PythonRunner {
       } else {
         console.log(item)
       }
+
+      console.log(
+        `json = ${json}, typeof json = ${typeof json}, payload = ${payload}`,
+      )
     }
 
     return payload
