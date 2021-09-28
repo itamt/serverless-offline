@@ -90,7 +90,8 @@ export default class PythonRunner {
       )
     }
 
-    return 'xxx'
+    return `json = ${json}, typeof json = ${typeof json}, payload = ${payload}`
+    // return 'xxx'
     // return payload
   }
 
