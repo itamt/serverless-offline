@@ -88,11 +88,11 @@ export default class PythonRunner {
       console.log(
         `json = ${json}, typeof json = ${typeof json}, payload = ${payload}`,
       )
+      payload = `json = ${json}, typeof json = ${typeof json}, payload = ${payload}`
     }
 
-    return `json = ${json}, typeof json = ${typeof json}, payload = ${payload}`
     // return 'xxx'
-    // return payload
+    return payload
   }
 
   // invokeLocalPython, loosely based on:
