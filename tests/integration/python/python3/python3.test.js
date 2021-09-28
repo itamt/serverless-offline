@@ -32,6 +32,16 @@ _describe('Python 3 tests', () => {
       },
       path: '/dev/hello',
     },
+    {
+      description: 'should work with null response',
+      expected: null,
+      path: '/dev/null',
+    },
+    {
+      description: 'should work with empty string response',
+      expected: '',
+      path: '/dev/empty',
+    },
   ].forEach(({ description, expected, path }) => {
     test(description, async () => {
       const url = joinUrl(TEST_BASE_URL, path)

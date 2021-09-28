@@ -18,3 +18,15 @@ functions:
           method: get
           path: hello
     handler: handler.hello
+  null:
+    events:
+      - http:
+          method: get
+          path: null
+    handler: handler.null
+  empty:
+    events:
+      - http:
+          method: get
+          path: empty
+    handler: handler.empty
