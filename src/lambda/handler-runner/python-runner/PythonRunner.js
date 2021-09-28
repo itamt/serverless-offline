@@ -90,7 +90,8 @@ export default class PythonRunner {
       )
     }
 
-    return payload
+    return 'xxx'
+    // return payload
   }
 
   // invokeLocalPython, loosely based on:
